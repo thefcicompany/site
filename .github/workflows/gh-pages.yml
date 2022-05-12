@@ -9,7 +9,8 @@ on:
 jobs:
   deploy:
     permissions:
-      contents: read/write 
+      contents: write 
+      metadata: write
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
